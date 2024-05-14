@@ -1,0 +1,32 @@
+@model RealEstateNet14Web.DbStuff.Models.RealEstate
+
+<div>
+    <form method="post">
+        <div>
+            Введите город:
+            @Html.TextBoxFor(x => x.City, new { placeholder = "Город" })
+        </div>
+        <div>
+            Введите улицу
+            @Html.TextBoxFor(x => x.Street, new { placeholder = "Улица" })
+        </div>
+        <div>
+            Количество комнат
+            @Html.TextBoxFor(x => x.Size, new { placeholder = "Количество комнат" })
+        </div>
+        <div>
+            Вид недвижимости
+            @Html.TextBoxFor(x => x.TypeRealEstate, new { placeholder = "Вид недвижимости" })
+        </div>
+        <div>
+            Цена
+            @Html.TextBoxFor(x => x.Price, new { placeholder = "Цена" })
+        </div>
+        <div>
+            Статус 
+            @Html.TextBoxFor(x => x.Status, new { placeholder = "Статус" })
+        </div>
+        <input type="submit" value="Добавить"/>
+    </form>
+</div>
+

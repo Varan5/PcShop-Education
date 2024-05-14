@@ -1,0 +1,76 @@
+﻿@using Net14Web.Models.PCSHOP
+@using Net14Web.Models.PcShop
+@model IndexViewModelPcShop
+
+@{
+    Layout = "_LayoutPcShop";
+}
+
+@section Style
+{
+    <link href="~/css/PcShop/Index.css" rel="stylesheet" />
+    <link href="~/css/home/Index.css" rel="stylesheet" />
+}
+
+@section Script {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/PcShop/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    <script src="~/js/home/chat.js"></script>
+    <script src="~/js/switchLang.js"></script>
+}
+
+<div class="color">@Net14Web.LocalizationFiles.PcShop.Hello @Model.UserName</div>
+@if (@Model.IsGuestUser)
+{
+    <div>
+        <a href="/PCSHOP/Registration">@Net14Web.LocalizationFiles.PcShop.Registration</a>
+    </div>
+}
+<div>
+    <a href="/PCSHOP/Users">@Net14Web.LocalizationFiles.PcShop.Users</a>
+</div>
+<div>
+    <a href="/PCSHOP/EditUserPassword">@Net14Web.LocalizationFiles.PcShop.EditUserPassword</a>
+</div>
+@if (Model.CanDelete)
+{
+    <div>
+        <a href="/PCSHOP/DeleteUsers">@Net14Web.LocalizationFiles.PcShop.DeleteUsers</a>
+    </div>
+}
+<div>
+    <a href="/PCSHOP/PCs">@Net14Web.LocalizationFiles.PcShop.PCs</a>
+</div>
+<div>
+    <a href="/PCSHOP/Cpu">@Net14Web.LocalizationFiles.PcShop.Cpu</a>
+</div>
+
+<div class="chat">
+    <input type="hidden" class="user-name" value="@Model.UserName" />
+    <div class="messages">
+        <div class="message template">
+            <span class="user-name">Ivan</span>
+            <span class="message-text">Hi</span>
+        </div>
+    </div>
+    <div>
+        <input class="new-message-text" />
+        <button class="send-message-button">Send</button>
+    </div>
+</div>
+
+<div>
+    @Model.FactAboutDate
+</div>
+<div><img src="@Model.FoxUrl" style="max-width: 600px;" /></div>
+
+@if (User.Identity.IsAuthenticated)
+    {
+        <text>
+            Curernt: @Model.CurrentLocale
+            Switch local to
+            <a href="/PCSHOP/SwitchLocale?locale=en-US">English</a>
+        <a href="/PCSHOP/SwitchLocale?locale=ru-RU">Русский</a>
+        </text>
+    }

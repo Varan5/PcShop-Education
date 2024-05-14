@@ -1,0 +1,181 @@
+.regContainer, .loginContainer {
+    font-family: Verdana, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin: 0;
+}
+
+.regContainer, .loginContainer {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.like-container {
+    display: flex;
+    max-height: 300px;
+}
+
+.comment-container {
+    display: flex;
+}
+
+.thumbUp, .thumbDown, send-comment {
+    cursor: pointer;
+}
+
+.regContainer h2, .loginContainer h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 10px;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background-color: #45a049;
+    }
+
+.reg-ref {
+    margin: 10px;
+}
+
+.update-form, .remove-form {
+    display: inline-block;
+}
+
+.add-company, .add-project, .add-user {
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+    .add-company label, .add-company input {
+        width: 400px;
+    }
+
+    .add-project label, .add-project input, .add-project select {
+        width: 400px;
+    }
+
+    .add-user label, .add-user input, .add-user select {
+        width: 400px;
+    }
+
+    .add-user select, .add-project select {
+        font-size: 14px;
+    }
+
+.submit {
+    margin: 10px;
+}
+
+.add-members {
+    font-size: 21px;
+    color: darkblue;
+}
+
+.admin-panel-button {
+    all: unset;
+}
+
+.change {
+    display: flex;
+    width: 400px;
+}
+
+.company-status {
+    width: 280px;
+    margin-right: 10px;
+}
+
+.company-status-list {
+    width: 70px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.template {
+    display: none;
+}
+
+.chat {
+    height: 150px;
+    max-width: 200px;
+    overflow-y: scroll;
+    background: #f2f2f2;
+    margin: 10px;
+}
+
+.comment-container {
+    max-width: 350px;
+}
+
+.new-comment {
+    max-width: 350px;
+    margin-left: 10px;
+}
+
+.send-comment {
+    margin-bottom: 10px;
+}
+
+.user-name {
+    color: forestgreen;
+}
+
+.like-container {
+    margin: 10px;
+}
+
+.article {
+    border: solid;
+    border-radius: 20px;
+    border-color: #00ff00;
+    margin: 10px;
+    padding: 10px;
+}
+
+.add-article {
+    margin: 5px;
+    padding: 10px;
+}
+
+.article-text {
+    margin: 10px;
+}

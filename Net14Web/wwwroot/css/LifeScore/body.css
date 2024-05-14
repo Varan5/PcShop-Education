@@ -1,0 +1,84 @@
+﻿.sport-content {
+    display: unset;
+    width: 800px;
+    background-color: #F8F8F8;
+    margin:10px;
+    border-radius:20px;
+}
+
+.content-header {
+    display: flex;
+   
+    height: 30px;
+    
+}
+
+.content-header-teams-table {
+    width: 25%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-header-teams-table:hover {
+    background-color: aquamarine;
+    border: none;
+}
+
+.content-header-results {
+    width: 25%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-header-results:hover {
+    background-color: aquamarine;
+    border:none;
+}
+
+.content-header-calendar {
+    width: 25%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-header-calendar:hover {
+    background-color: aquamarine;
+    border: none;
+}
+
+.content-header-teams {
+    width: 25%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-header-teams:hover {
+    background-color: aquamarine;
+    border: none;
+}
+
+.content-table {
+    margin: 20px;
+    background-color: #F8F8F8;
+}
+

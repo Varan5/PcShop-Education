@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @RenderSection("Style", false)
+    @RenderSection("Script", false)
+    @await Html.PartialAsync("_AlertPartial")
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @if ((!User?.Identity?.IsAuthenticated) ?? true)
+        {
+            <a class='login-link' href="PCSHOP/login">Login</a>
+        }
+        else
+        {
+            <a class='logout-link' href="PCSHOP/logout">Logout</a>
+        }
+        <div class="footer">
+        </div>
+        <a href="/PcShop/Index">PcShop</a>
+    </div>
+    @RenderBody()
+    <div>
+    </div>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <text>
+            Языки: <span class="lang">ru-RU</span> <span class="lang">en-EN</span>
+        </text>
+    }
+</body>
+</html>

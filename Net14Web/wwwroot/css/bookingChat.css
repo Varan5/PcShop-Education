@@ -1,0 +1,14 @@
+﻿.template{
+    display: none;
+}
+
+.chat {
+    margin-top: 20px;
+    height: 300px;
+    overflow-y: scroll;
+    width: 500px;
+    background-color: aliceblue;
+}
+.send-message {
+    margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+﻿@using Net14Web.DbStuff.Models.PcShop
+@model List<CpuModel>
+
+@{
+    Layout = "_LayoutPcShop";
+}
+
+<div>
+    <table>
+        <tr><th>Manufacturer</th><th>Model</th><th>Generation</th><th>Socket</th><th>Frequency</th><th>Cores</th><th>Socket</th><th>Threads</th><th>Price</th></tr>
+        @foreach (var Cpu in Model)
+        {
+            <tr>
+                <td>@Cpu.Manufacturer</td>
+                <td>@Cpu.Model</td>
+                <td>@Cpu.Generation</td>
+                <td>@Cpu.Socket</td>
+                <td>@Cpu.Frequency</td>
+                <td>@Cpu.Cores</td>
+                <td>@Cpu.Socket</td>
+                <td>@Cpu.Threads</td>
+                <td>@Cpu.Price</td>
+            </tr>
+        }
+    </table>
+</div>
