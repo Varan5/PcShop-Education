@@ -163,7 +163,7 @@ namespace Net14Web.Controllers
         }
 
         // POST: PCSHOPController/Delete/5
-        [HttpPost]
+        [HttpGet]
 
         public ActionResult DeleteUsers(int id)
         {
